@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- EDITME: Google Tag Manager — reemplazá GTM-XXXXXXX por tu contenedor -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- Fin Google Tag Manager -->
+<!-- EDITME: Microsoft Clarity — reemplazá XXXXXXXXXX por tu ID de proyecto -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "XXXXXXXXXX");
+</script>
+<!-- Fin Microsoft Clarity -->
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+<!-- EDITME: UTMify — reemplazá el pixelId por el tuyo (o quitá este bloque) -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<script>
+  window.pixelId = "TU_PIXEL_ID_UTMIFY";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<!-- Fin UTMify -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎁 ¡Esperá! Tengo un regalo para vos — BumbumFlix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-state="gift">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Fin Google Tag Manager -->
+
+  <!-- Barra fija GLOBAL — se ancla arriba después de abrir el regalo -->
+  <div class="sticky-bar" id="sticky-bar" hidden>
+    <div class="sticky-inner">
+      <span class="sticky-coupon">🎁 BUMBUM50</span>
+      <span class="sticky-divider">•</span>
+      <span class="sticky-timer">
+        ⏰ <span id="timer-min">05</span>:<span id="timer-sec">00</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- ═════════════ ESTADO 1: REGALO ═════════════ -->
+  <main class="gift-screen" id="gift-screen">
+    <div class="content gift-content">
+
+      <h1 class="hero-title">
+        ¡Esperá!<br>
+        <span class="highlight">Antes de irte de la clase de Murilo… rescatá tu regalo 🎁</span>
+      </h1>
+
+      <!-- Caja de regalo clickeable -->
+      <button class="gift-box" id="gift-btn" aria-label="Abrir regalo">
+        <div class="gift-glow"></div>
+        <div class="gift-emoji">🎁</div>
+        <div class="gift-tap-hint">
+          <span>👇 TOCÁ PARA ABRIR</span>
+        </div>
+      </button>
+
+      <p class="click-instruction">
+        <span class="arrow">↑</span> Tocá el regalo de arriba para abrirlo
+      </p>
+    </div>
+  </main>
+  <!-- ═════════════ ESTADO 2: CUPÓN REVELADO ═════════════ -->
+  <section class="coupon-screen" id="coupon-screen" hidden>
+    <div class="content">
+      <div class="celebration">🎉</div>
+
+      <h2 class="reveal-title">
+        ¡Felicitaciones!<br>
+        <span class="highlight-pink">Acabás de ganar:</span>
+      </h2>
+
+      <!-- Tarjeta del cupón -->
+      <div class="coupon-card">
+        <div class="coupon-tag">🎁 TU REGALO</div>
+        <div class="coupon-amount">35% OFF</div>
+        <div class="coupon-desc">de descuento en el acceso completo a <strong>BumbumFlix</strong></div>
+        <button class="coupon-code" id="coupon-code" data-code="BUMBUM50">
+          <span class="code-label">CUPÓN</span>
+          <strong>BUMBUM50</strong>
+          <span class="copy-icon" id="copy-icon">📋 copiar</span>
+        </button>
+        <div class="coupon-applied-note">✅ Cupón ya aplicado en el botón de abajo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════ ESTADO 3: OFERTA ═════════════ -->
+  <section class="offer-section" id="oferta" hidden>
+    <div class="content offer-content">
+
+      <h3 class="offer-title">
+        Todo lo que te vas a llevar<br>
+        <span class="highlight-pink">en BumbumFlix con 35% de descuento:</span>
+      </h3>
+
+      <!-- Imagen del experto -->
+      <div class="expert-image">
+        <img src="assets/expert-prova-social.jpg" alt="Murilo Herbst y resultados de alumnas de BumbumFlix" loading="lazy">
+      </div>
+
+      <!-- Lista de ítems estilo Notion (checklist) -->
+      <h4 class="list-title">✅ Qué incluye:</h4>
+
+      <div class="checklist">
+
+        <div class="check-item check-main">
+          <div class="check-mark">⚡</div>
+          <div class="check-content">
+            <strong>Plataforma BumbumFlix Completa</strong>
+            <p>Acceso de por vida a la <em>Secuencia Activadora</em> — el método que destraba el Síndrome de Amnesia Glútea y activa los 9 cuadrantes del glúteo en el orden correcto. Entrená en casa o en el gimnasio.</p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div class="check-mark">✅</div>
+          <div class="check-content">
+            <strong>BONO 1: Protocolo Cuádriceps Proporcional</strong>
+            <p>Entrenamiento para definir y hacer crecer el muslo en la proporción justa para tu glúteo. <span class="free-tag">GRATIS</span></p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div class="check-mark">✅</div>
+          <div class="check-content">
+            <strong>BONO 2: Protocolo Posterior Anti-Celulitis</strong>
+            <p>Secuencia que activa las fibras profundas de la parte posterior y estimula el colágeno. <span class="free-tag">GRATIS</span></p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div class="check-mark">✅</div>
+          <div class="check-content">
+            <strong>BONO 3: Dos Entrenamientos de Tren Superior</strong>
+            <p>Para definir brazos, hombros y eliminar el "rollito" de la espalda. <span class="free-tag">GRATIS</span></p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div class="check-mark">✅</div>
+          <div class="check-content">
+            <strong>BONO 4: 51 Recetas Proteicas</strong>
+            <p>Recetas rápidas y ricas — incluyendo el panqueque de 3 ingredientes que mata las ganas de dulce. <span class="free-tag">GRATIS</span></p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div class="check-mark">✅</div>
+          <div class="check-content">
+            <strong>BONO 5: Protocolo Entrenamiento Express</strong>
+            <p>El entrenamiento de 20 minutos que activa el glúteo igual que una sesión de 1 hora. <span class="free-tag">GRATIS</span></p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div class="check-mark">🎁</div>
+          <div class="check-content">
+            <strong>BONO SECRETO: Regalo Sorpresa</strong>
+            <p>Se revela en tu primer inicio de sesión. No es ejercicio, no es receta — es algo completamente distinto. <span class="free-tag">GRATIS</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Callout de precio estilo Notion -->
+      <div class="price-callout">
+        <div class="price-tag">🎁 CUPÓN BUMBUM50 APLICADO</div>
+        <div class="price-old">Precio completo</div>
+        <div class="price-arrow">↓</div>
+        <div class="price-new">35% OFF</div>
+        <div class="price-installments">cuotas disponibles en el checkout</div>
+        <div class="price-perks">
+          <span>✅ Acceso de por vida</span>
+          <span>✅ Actualizaciones gratis</span>
+        </div>
+      </div>
+
+      <!-- EDITME: reemplazá por tu link real de checkout con descuento antes
+           de mandar tráfico (confirmá primero si esta oferta de Hotmart
+           sigue activa a tu nombre). -->
+      <a href="TU_LINK_DE_CHECKOUT_DESCUENTO" class="cta-btn" id="cta-btn">
+        QUIERO MI BUMBUMFLIX CON 35% OFF →
+      </a>
+
+      <p class="cta-note">
+        🔒 Pago 100% seguro • Acceso inmediato
+      </p>
+
+      <!-- Callout de garantía -->
+      <div class="callout callout-green guarantee">
+        <div class="callout-icon">🛡️</div>
+        <div class="callout-text">
+          <strong>Garantía incondicional de 30 días</strong>
+          <p>Si no sentís el glúteo activarse como nunca — o creés que no valió cada peso — mandá un mensaje y Murilo te devuelve el 100%, sin preguntar nada.</p>
+        </div>
+      </div>
+
+      <!-- FAQ rápido -->
+      <h4 class="list-title">❓ Preguntas frecuentes:</h4>
+
+      <details class="faq-item">
+        <summary>¿Funciona para mí si nunca entrené?</summary>
+        <p>Sí. El programa tiene niveles para principiante, intermedio y avanzado. La Secuencia Activadora funciona desde la primera alumna que nunca pisó un gimnasio hasta quien entrena hace años sin ver crecer el glúteo.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Necesito ir al gimnasio?</summary>
+        <p>No. Hay un entrenamiento completo para hacer en casa, con poco o ningún equipamiento. Quien entrena en gimnasio también tiene su propio nivel.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cuánto tiempo de entrenamiento por día?</summary>
+        <p>30 a 45 minutos. Y en los días con poco tiempo, el Bono de Entrenamiento Express lo resuelve en 20 minutos.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cómo es la garantía?</summary>
+        <p>30 días. ¿No te gustó por algún motivo? Mandá un mensaje y Murilo te devuelve el 100% del valor. Sin trámites, sin preguntas.</p>
+      </details>
+
+      <!-- EDITME: mismo link que el botón de arriba -->
+      <a href="TU_LINK_DE_CHECKOUT_DESCUENTO" class="cta-btn cta-btn-secondary" id="cta-btn-2">
+        QUIERO MI BUMBUMFLIX CON 35% OFF →
+      </a>
+
+      <p class="footer-note">
+        BumbumFlix • Murilo Herbst • Personal Trainer CREF
+      </p>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

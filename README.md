@@ -9,6 +9,7 @@ quiz interactivo → página de VSL (video de ventas) → checkout externo (Hotm
 public/
   index.html          Quiz interactivo (página de inicio)
   vsl/index.html       Página de la VSL (video + bio del experto + referencias)
+  rescate/index.html   Página de "última oportunidad" (regalo + cupón + oferta completa)
   privacidad.html       Política de privacidad
   terminos.html         Términos de uso
   assets/
@@ -62,6 +63,26 @@ railway.json            Config explícita de build/deploy para Railway
   referencias específicas a la ley brasileña (LGPD) genéricadas o marcadas
   con `EDITME`. Revisalos con un asesor legal antes de publicar,
   especialmente si vendés a varios países.
+
+## Página de rescate (`/rescate/`)
+
+Cuando alguien intenta salir del quiz o de la VSL antes de tiempo (botón
+atrás, cerrar pestaña, mouse hacia el borde superior), el script de
+"back-redirect" lo manda a `/rescate/`: una página de última oportunidad con
+una caja de regalo animada que revela un cupón de descuento (35% OFF) y el
+detalle completo de la oferta (BumbumFlix + 6 bonos), traducida del original.
+
+- **Los dos botones de compra de esta página** (`public/rescate/index.html`,
+  buscá `TU_LINK_DE_CHECKOUT_DESCUENTO`) apuntan a un placeholder — confirmá
+  primero si la oferta original de Hotmart (con el código de descuento) sigue
+  activa a tu nombre antes de poner el link real.
+- El código de cupón que se muestra ("BUMBUM50") es solo texto decorativo en
+  esta página; no está conectado a ningún sistema de cupones real. Si querés
+  que el descuento se aplique de verdad, tenés que configurarlo del lado de
+  tu pasarela de pago (Hotmart u otra) y, si querés, actualizar este texto
+  para que coincida.
+- `public/rescate/script.js` guarda el progreso en `localStorage` del
+  navegador (si la persona vuelve a entrar, ve el cupón ya abierto).
 
 ## Correr en local
 
