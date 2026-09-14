@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- EDITME: Google Tag Manager — reemplazá GTM-XXXXXXX por tu contenedor -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- Fin Google Tag Manager -->
+<!-- EDITME: Microsoft Clarity — reemplazá XXXXXXXXXX por tu ID de proyecto -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "XXXXXXXXXX");
+</script>
+<!-- Fin Microsoft Clarity -->
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+<!-- Back-redirect — si vuelve atrás, cierra o intenta salir, la persona
+     vuelve a esta misma página (evita que se corte la sesión a mitad del
+     video). -->
+<script>
+(function() {
+  var backUrl = '/vsl/';
+  var redirected = false;
+  var pageReady = false;
+
+  setTimeout(function() { pageReady = true; }, 1500);
+
+  function redirect() {
+    if (redirected) return;
+    redirected = true;
+    window.location.replace(backUrl);
+  }
+
+  if (window.history && window.history.pushState) {
+    for (var i = 0; i < 5; i++) {
+      history.pushState({ br: i }, '', window.location.href);
+    }
+    window.addEventListener('popstate', function() { redirect(); });
+  }
+
+  document.addEventListener('mouseleave', function(e) {
+    if (!pageReady) return;
+    if (e.clientY <= 0) redirect();
+  });
+
+  window.addEventListener('beforeunload', function(e) {
+    if (redirected) return;
+    e.preventDefault();
+    e.returnValue = '';
+    return '';
+  });
+
+  window.addEventListener('pageshow', function(e) {
+    if (e.persisted) redirect();
+  });
+})();
+</script>
+<!-- Fin back-redirect -->
+<!-- EDITME: UTMify — reemplazá el pixelId por el tuyo (o quitá este bloque) -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<script>
+  window.pixelId = "TU_PIXEL_ID_UTMIFY";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<!-- Fin UTMify -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clase Exclusiva — Método de Activación para Entrenar Glúteo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- EDITME: reproductor de video (VTurb). Este embed sigue apuntando al
+     video ORIGINAL, que está grabado en portugués — no es posible doblarlo
+     ni traducirlo automáticamente. Cuando tengas tu propio video en
+     español, subilo a tu cuenta de VTurb (o al hosting de video que
+     prefieras) y reemplazá el id "6a11b52478ec206077d302af" y el <script>
+     de abajo por los de tu nuevo player. -->
+<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+<link rel="preload" href="https://scripts.converteai.net/f901d856-8c9b-4e04-8c81-48e3fb975062/ab-test/6a11b52478ec206077d302af/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+<link rel="dns-prefetch" href="https://license.vturb.com">
+
+<style>
+  /* ── Reset ─────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── Design tokens — modo oscuro ─────────────────────────── */
+  :root {
+    --bg:           #0E1014;
+    --bg-card:      #181B22;
+    --bg-card-2:    #20242D;
+    --accent:       #F0742E;
+    --accent-light: #F89A5E;
+    --text-1:       #F4F6FB;
+    --text-2:       #C9D1DE;
+    --text-3:       #93A0B3;
+    --text-4:       #5E6878;
+    --border:       #2C313C;
+    --border-soft:  #232830;
+    --radius-card:  18px;
+    --radius-video: 14px;
+  }
+
+  /* ── Base ───────────────────────────────────────────────── */
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    background-color: var(--bg);
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 720px; height: 480px;
+    background: radial-gradient(ellipse at center, rgba(240,116,46,.10), transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .page {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 980px;
+    padding: 48px 20px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .video-section {
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .video-card {
+    width: 100%;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    box-shadow:
+      0 1px 3px rgba(0,0,0,.55),
+      0 14px 44px rgba(0,0,0,.5),
+      0 0 0 1px rgba(240,116,26,.05);
+  }
+
+  .video-inner {
+    position: relative;
+    background: var(--bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 16px;
+  }
+
+  .video-inner vturb-smartplayer {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: var(--radius-video);
+    overflow: hidden;
+  }
+
+  .expert-compact {
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 8px 4px 0;
+  }
+
+  .expert-photo-wrap {
+    flex-shrink: 0;
+    width: 300px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .expert-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .expert-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+    padding-top: 4px;
+  }
+
+  .expert-name {
+    font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+    font-weight: 900;
+    color: var(--text-1);
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  .expert-bio {
+    font-size: .98rem;
+    font-weight: 500;
+    color: var(--text-3);
+    line-height: 1.65;
+    text-align: left;
+  }
+
+  .expert-bio strong {
+    font-weight: 800;
+    color: var(--text-2);
+  }
+
+  .expert-bio em {
+    font-style: italic;
+    color: var(--text-3);
+    display: block;
+    margin-top: 10px;
+  }
+
+  .urgency-strip {
+    width: 100%;
+    max-width: 780px;
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    padding: 14px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .urgency-strip svg { flex-shrink: 0; margin-top: 2px; }
+  .urgency-text {
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--text-3);
+    line-height: 1.55;
+  }
+  .urgency-text .date-highlight {
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--accent-light);
+  }
+
+  .references-section {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: var(--bg);
+    border-top: 1px solid var(--border-soft);
+    padding: 36px 24px 40px;
+  }
+  .references-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .references-heading {
+    font-size: .68rem;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--text-2);
+    margin-bottom: 2px;
+  }
+  .references-intro {
+    font-size: .72rem;
+    color: var(--text-3);
+    line-height: 1.55;
+    margin-bottom: 4px;
+  }
+  .references-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .references-list li {
+    font-size: .72rem;
+    color: var(--text-3);
+    line-height: 1.6;
+  }
+  .references-list li strong { color: var(--text-2); }
+  .references-list li em { font-style: italic; }
+
+  .site-footer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-top: 1px solid var(--border-soft);
+    padding: 56px 20px 40px;
+    margin-top: 32px;
+  }
+  .footer-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .footer-link {
+    font-size: .68rem;
+    font-weight: 700;
+    color: var(--text-3);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    letter-spacing: .03em;
+    transition: color .2s ease;
+  }
+  .footer-link:hover { color: var(--accent-light); }
+  .footer-sep { font-size: .68rem; color: var(--text-4); }
+  .footer-disclaimer {
+    font-size: .68rem;
+    line-height: 1.65;
+    color: var(--text-4);
+    text-align: center;
+    max-width: 680px;
+  }
+
+  @media (max-width: 720px) {
+    .expert-compact {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 560px;
+    }
+    .expert-photo-wrap { width: 280px; }
+    .expert-text { padding-top: 0; }
+  }
+
+  @media (max-width: 480px) {
+    .page { padding: 36px 16px 72px; gap: 48px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Fin Google Tag Manager -->
+
+  <main class="page">
+
+    <!-- Video -->
+    <div class="video-section" role="region" aria-label="Video de la clase exclusiva">
+      <div class="video-card">
+        <div class="video-inner">
+          <vturb-smartplayer id="ab-6a11b52478ec206077d302af" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+          <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/f901d856-8c9b-4e04-8c81-48e3fb975062/ab-test/6a11b52478ec206077d302af/player.js", s.async=!0,document.head.appendChild(s); </script>
+        </div>
+      </div>
+    </div>
+
+    <!-- Urgencia -->
+    <div class="urgency-strip" role="note" aria-live="polite">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F0742E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <p class="urgency-text">
+        Esta clase va a estar disponible de forma gratuita solamente hasta el
+        <strong class="date-highlight" id="data-limite">16 de mayo de 2026</strong>.
+        Mirala ahora antes de que se cierre el acceso.
+      </p>
+    </div>
+
+    <!-- Experto -->
+    <section class="expert-compact" aria-labelledby="expert-name">
+      <div class="expert-photo-wrap">
+        <img src="/assets-global/murilo-perfil.png?v=2" alt="Murilo Herbst, Personal Trainer especializado en entrenamiento femenino" class="expert-photo" loading="lazy" width="1080" height="1440">
+      </div>
+      <div class="expert-text">
+        <h3 id="expert-name" class="expert-name">Murilo Herbst | Personal Trainer especializado en entrenamiento femenino</h3>
+        <p class="expert-bio">
+          Murilo Herbst es Personal Trainer (CREF 147533-G/SP) graduado en Educación Física por la FMU y está terminando la carrera de Nutrición, con más de 10 años de experiencia práctica en entrenamiento femenino. A lo largo de su carrera desarrolló la Secuencia Activadora — <strong>un método de entrenamiento ya aplicado en más de 20.000 alumnas en todo el mundo</strong> — que combina estudios recientes de hipertrofia regional, biomecánica y fisiología del ejercicio con la observación práctica diaria en el gimnasio.
+          <em>Su enfoque lo posiciona como una referencia en entrenamiento de glúteo basado en activación muscular e hipertrofia regional aplicada.</em>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Referencias -->
+  <section class="references-section" aria-labelledby="ref-heading">
+    <div class="references-inner">
+      <p class="references-heading" id="ref-heading">Referencias Científicas</p>
+      <p class="references-intro">La información presentada en este video está basada en investigaciones científicas publicadas en revistas revisadas por pares:</p>
+      <ol class="references-list">
+        <li><strong>1.</strong> Neto WK, et al. Gluteus maximus activation during common strength and hypertrophy exercises: a systematic review. <em>Journal of Sports Science and Medicine</em>. 2020;19(1):195-203.</li>
+        <li><strong>2.</strong> Contreras B, et al. A comparison of gluteus maximus, biceps femoris, and vastus lateralis electromyographic activity in the back squat and barbell hip thrust exercises. <em>Journal of Applied Biomechanics</em>. 2015;31(6):452-458.</li>
+        <li><strong>3.</strong> Williams MJ, et al. Activation of the gluteus maximus during performance of the back squat, split squat, and barbell hip thrust and the relationship with maximal sprinting. <em>Journal of Strength and Conditioning Research</em>. 2021;35(1):16-24.</li>
+        <li><strong>4.</strong> Reiman MP, et al. A literature review of studies evaluating gluteus maximus and gluteus medius activation during rehabilitation exercises. <em>Sports Health</em>. 2012;4(1):5-13.</li>
+        <li><strong>5.</strong> Crow JF, et al. Low load exercises targeting the gluteal muscle group acutely enhance explosive power output in elite athletes. <em>Journal of Strength and Conditioning Research</em>. 2012;26(2):438-442.</li>
+        <li><strong>6.</strong> McCann RS, et al. Effect of a gluteal activation warm-up on explosive exercise performance. <em>Journal of Human Kinetics</em>. 2017;57:149-158.</li>
+        <li><strong>7.</strong> Parr M, et al. Does short-term gluteal activation enhance muscle performance? <em>PeerJ</em>. 2017;5:e3005.</li>
+        <li><strong>8.</strong> Khayambashi K, et al. Activation training facilitates gluteus maximus recruitment during weight-bearing strengthening exercises. <em>Physical Therapy in Sport</em>. 2022;54:53-59.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <nav class="footer-links" aria-label="Enlaces legales">
+        <a href="/privacidad.html" class="footer-link">Política de Privacidad</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="/terminos.html" class="footer-link">Términos de Uso</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="mailto:contacto@tudominio.com" class="footer-link">Contacto</a>
+      </nav>
+      <p class="footer-disclaimer">
+        Este sitio no está afiliado, asociado, patrocinado ni avalado por Facebook, Instagram, Meta Platforms Inc., Google LLC, YouTube, TikTok ni ninguna otra plataforma de redes sociales. Los nombres y logotipos de esas empresas son marcas registradas de sus respectivos dueños.
+      </p>
+      <p class="footer-disclaimer">
+        Los resultados presentados son individuales y pueden variar de una persona a otra, según factores como el historial de entrenamiento, la alimentación, el descanso, la genética y la disciplina al aplicar el método. Este contenido tiene un carácter exclusivamente educativo y no reemplaza una orientación médica, kinesiológica o nutricional individualizada. Consultá a un profesional de la salud antes de iniciar cualquier programa de ejercicios.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    const hoy = new Date();
+    document.getElementById('data-limite').textContent = hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear();
+  </script>
+
+</body>
+</html>
