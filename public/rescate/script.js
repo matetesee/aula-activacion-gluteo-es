@@ -153,7 +153,7 @@ function fireConfetti() {
 // Copiar el código del cupón
 // ═══════════════════════════════════════════════════════════════
 couponCodeBtn.addEventListener('click', async () => {
-  const code = couponCodeBtn.dataset.code || 'BUMBUM50';
+  const code = couponCodeBtn.dataset.code || 'JEZAJEZA50';
   try {
     await navigator.clipboard.writeText(code);
   } catch {
