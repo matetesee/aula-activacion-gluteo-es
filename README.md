@@ -38,6 +38,14 @@ railway.json            Config explícita de build/deploy para Railway
   se dejaron como placeholders** (`GTM-XXXXXXX`, `XXXXXXXXXX`,
   `TU_PIXEL_ID_UTMIFY`). Buscá `EDITME` en los archivos HTML para encontrar
   cada lugar donde tenés que poner tus propios IDs.
+- **El botón "Quiero mi acceso ahora" debajo del video** (`public/vsl/index.html`,
+  buscá `TU_LINK_DE_CHECKOUT`) es nuestro, vive en este archivo y está en
+  español — reemplazá el href por tu link de checkout real antes de mandar
+  tráfico. El propio reproductor de VTurb también trae su encabezado y su
+  botón final ("QUERO EMPINAR O BUMBUM") en portugués, apuntando al checkout
+  de Hotmart del video ORIGINAL — eso NO se puede editar desde este repo,
+  solo desde la cuenta de VTurb/ConverteAI dueña de ese player (ver más
+  abajo).
 - **El script que mandaba eventos a un dashboard de terceros
   (`dash.scalers-infra.com`) se quitó.** Se mantiene `assets/quiz-dash.js`,
   que observa el quiz y llama a `window.bumTrack`/`window.bumAnswer` — esas
